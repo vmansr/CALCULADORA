@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="app.js" defer></script>
+    <style>
+        body {
+            background-color: hsl(231, 36%, 85%);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(21, 63, 90);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.685);
+        }
+        .calculator input {
+            grid-column: span 4;
+            padding: 20px;
+            font-size: 1.5em;
+            border: 1px solid hsl(221, 81%, 33%);
+            border-radius: 5px;
+            text-align: right;
+            background-color: hsl(0, 0%, 88%);
+        }
+        .calculator button {
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .calculator button:hover {
+            opacity: 0.9;
+        }
+        .calculator button:nth-child(2) {
+            background-color: hsl(0, 70%, 4%);
+            color: #9b1010;
+        }
+        .calculator button:nth-child(3),
+        .calculator button:nth-child(4),
+        .calculator button:nth-child(5),
+        .calculator button:nth-child(6),
+        .calculator button:nth-child(7),
+        .calculator button:nth-child(8),
+        .calculator button:nth-child(9),
+        .calculator button:nth-child(10),
+        .calculator button:nth-child(11),
+        .calculator button:nth-child(12),
+        .calculator button:nth-child(13),
+        .calculator button:nth-child(14),
+        .calculator button:nth-child(15),
+        .calculator button:nth-child(16) {
+            background-color: hsl(0, 0%, 3%);
+            color: hwb(0 89% 9%);
+        }
+        .calculator button:nth-child(17) {
+            background-color: hsl(245, 86%, 5%);
+            color: hwb(0 89% 9%);
+        }
+        .calculator button:nth-child(18) {
+            background-color: hsl(245, 86%, 5%);
+            color: hwb(0 89% 9%);
+        }
+    </style>
+</head>
+<body>
+    <h1> Calculadora HTML</h1>
+    <h2> Implementada por Victor Manuel Sánchez</h2>    
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendToDisplay('+')">+</button>
+    </div>
+    <script>
+       
+    </script>
+</body>
+</html>
